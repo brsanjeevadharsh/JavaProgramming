@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+class Main
+{
+public static void main (String[] args) {
+int n;
+Scanner in = new Scanner(System.in);
+System.out.println("Enter the number");
+n=in.nextInt();
+int result = sumofdigits(n);
+System.out.println(result);
+}
+public static int sumofdigits(int n)
+{
+    int rem,total=0;
+    while(n>0)
+    {
+        rem=n%10;
+        total+=rem;
+        n=n/10;
+    }
+    return total;
+}
+}

@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+class Main
+{
+    static Scanner in = new Scanner(System.in);
+    public static void main(String args[])
+    {
+        int n;
+        System.out.println("Enter the number:");
+        n=in.nextInt();
+        int totdigit = CountDigits(n);
+        System.out.println("Total Digits:"+totdigit);
+    }
+    static int CountDigits(int n)
+    {
+        int rem,totdigit=0;
+        while(n>0)
+        {
+            rem=n%10;
+            n=n/10;
+            totdigit++;
+    }
+     return totdigit;
+}
+}
